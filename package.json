@@ -1,0 +1,146 @@
+{
+  "name": "ceros-app",
+  "version": "0.0.43",
+  "private": true,
+  "homepage": "/app/",
+  "dependencies": {
+    "@ankr.com/provider": "1.5.23",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.2",
+    "@redux-requests/axios": "^1.2.0",
+    "@redux-requests/core": "^1.7.0",
+    "@redux-requests/mock": "^1.1.0",
+    "@redux-requests/promise": "^1.1.0",
+    "@redux-requests/react": "^1.8.0",
+    "axios": "^0.26.1",
+    "bignumber.js": "^9.0.2",
+    "dayjs": "^1.11.0",
+    "react": "~17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.28.1",
+    "react-intl-universal": "^2.4.12",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "4.0.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-uid": "^2.3.2",
+    "recharts": "^2.1.9",
+    "redux": "^4.1.2",
+    "redux-smart-actions": "^1.0.0",
+    "reselect": "^4.1.5",
+    "scryptsy": "^2.1.0",
+    "sha3": "^2.1.4",
+    "tss-react": "^3.7.0",
+    "typechain": "^8.1.0",
+    "web3": "^1.7.1",
+    "web3-core": "^1.7.1",
+    "web3-eth-contract": "^1.7.1",
+    "web3-utils": "^1.7.1",
+    "web3modal": "^1.9.5"
+  },
+  "scripts": {
+    "start": "yarn start:dev",
+    "start:dev": "cross-env PORT=3011 env-cmd -f .env.dev react-scripts start",
+    "start:stage": "env-cmd -f .env.stage react-scripts start",
+    "start:prod": "env-cmd -f .env.prod react-scripts start",
+    "build:dev": "env-cmd -f .env.dev yarn build",
+    "build:stage": "env-cmd -f .env.stage yarn build",
+    "build:prod": "env-cmd -f .env.prod yarn build",
+    "build": "yarn typechain && react-scripts build",
+    "postbuild": "react-snap",
+    "typechain": "rm -rf ./src/modules/api/types && typechain --target web3-v1 --out-dir ./src/modules/api/types './src/modules/api/contracts/*.json'",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "commit": "git-cz",
+    "lint": "eslint --ext .tsx,.ts . --fix",
+    "beforecommit": "lint-staged"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not ie <= 99",
+      "not android <= 4.4.4",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@typechain/web3-v1": "^6.0.1",
+    "@types/lodash": "^4.14.181",
+    "@types/react": "17.0.42",
+    "@types/react-dom": "~17.0.14",
+    "@types/react-redux": "^7.1.23",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-syntax-highlighter": "^15.5.5",
+    "@typescript-eslint/eslint-plugin": "~5.16.0",
+    "@typescript-eslint/parser": "~5.16.0",
+    "cz-conventional-changelog": "3.3.0",
+    "env-cmd": "^10.1.0",
+    "eslint-config-airbnb": "~19.0.4",
+    "eslint-config-airbnb-typescript": "~16.1.4",
+    "eslint-config-prettier": "~8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-typescript": "~0.14.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-webpack-plugin": "~3.1.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "~2.6.0",
+    "react-error-overlay": "^6.0.10",
+    "react-snap": "^1.23.0",
+    "typescript": "~4.6.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "disableScopeLowerCase": true,
+      "disableSubjectLowerCase": true
+    }
+  },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "include": [
+      "/vaults",
+      "/vaults/yield-converter/deposit",
+      "/vaults/yield-converter/withdraw",
+      "/vaults/yield-converter/claim",
+      "/vaults/stability-pool/deposit",
+      "/vaults/stability-pool/withdraw",
+      "/vaults/stability-pool/claim",
+      "/vaults/cross-chain-staking/deposit",
+      "/vaults/cross-chain-staking/withdraw",
+      "/vaults/cross-chain-staking/claim",
+      "/master-vaults",
+      "/master-vaults/create",
+      "/master-vaults/add-strategy"
+    ],
+    "skipThirdPartyRequests": true,
+    "inlineCss": true
+  }
+}

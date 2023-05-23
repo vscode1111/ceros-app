@@ -1,0 +1,307 @@
+{
+  "common": {
+    "back": "Back",
+    "max": "Max",
+    "deposit": "Deposit",
+    "claim": "Claim",
+    "filter": "Filter",
+    "add-and-search": "Add wallet addresses or search..."
+  },
+  "auth": {
+    "title": "Connect wallet to continue"
+  },
+  "wrong-network": {
+    "title": "Wrong network",
+    "subtitle": "The current page is not available on {value}",
+    "switch-to": "Please switch to",
+    "submit": "Switch network",
+    "error": {
+      "is-active": "The network is active already"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "number-only": "Must be a number",
+    "min": "Should be greater than {value}",
+    "max": "Your balance is not sufficient",
+    "address-invalid": "This address is invalid"
+  },
+  "header": {
+    "menu-links": {
+      "vaults": "Vaults",
+      "docs": "Docs"
+    },
+    "account": {
+      "connect-wallet": "Connect wallet",
+      "open-explorer": "View on Explorer",
+      "bnb-chain": "BNB chain",
+      "disconnect": "Disconnect",
+      "copy-address": "Copy Address"
+    }
+  },
+  "footer": {
+    "all-rights": "© 2022 Ceros.finance."
+  },
+  "modal": {
+    "in-progress": {
+      "title": "Transaction in progress",
+      "description": "This transaction is expected to take a few seconds to complete. Do not close this when it's in process",
+      "hash": "Tx Hash"
+    },
+    "completed": {
+      "deposit-title": "Deposit successful!",
+      "withdraw-title": "Withdrawal successful!",
+      "claim-title": "Claim was successful!",
+      "deposited": "Deposited",
+      "recipient-address": "Recipient address",
+      "hash": "Tx Hash",
+      "go-to-dashboard": "Go to dashboard",
+      "add-unit-to-wallet": "Add {unit} to wallet"
+    },
+    "failed": {
+      "title": "Transaction failed",
+      "description": "Transaction has been reverted by the EVM",
+      "hash": "Tx Hash"
+    }
+  },
+  "slider": {
+    "caution": "Caution"
+  },
+  "vaults": {
+    "my-perfomance": "My perfomance",
+    "perfomance-table": {
+      "deposit-title": "Deposit",
+      "deposit-tooltip": "The total value of deposits in US dollars",
+      "expect-annual-title": "Expect annual rewards",
+      "expect-annual-tooltip": "The expect annual yield is an weighted average return of all the pool you have participated",
+      "rewards-claimable-title": "Rewards claimable",
+      "rewards-claimable-tooltip": "Please note: this fee applies to staking rewards/earnings only, and is NOT taken from your staked amount. It is a fee on earnings only."
+    },
+    "vault-networks": {
+      "any": "any network",
+      "Ethereum": "Ethereum",
+      "BNB-Chain": "BNB Chain",
+      "Polygon": "Polygon",
+      "Avalanche": "Avalanche",
+      "Fantom": "Fantom"
+    },
+    "vault-types": {
+      "any": "any type",
+      "Yield-Converter": "Yield Converter",
+      "Stability-Pool": "Stability Pool",
+      "Cross-Chain-Staking": "Cross-Chain Staking"
+    },
+    "vault-assets": {
+      "any": "any assets",
+      "aBNBc": "aBNBc",
+      "SIKKA": "SIKKA",
+      "coin": "coin"
+    },
+    "vault-header": {
+      "vault-title": "Vault",
+      "deposit-title": "Deposit",
+      "deposit-tooltip": "The total amount of tokens you have deposited into the pool",
+      "yield-title": "Yield",
+      "yield-tooltip": "The estimate of earned yield or unclaimed rewards generated from the deposits (principal)",
+      "currency-title": "Currency:",
+      "currency-tooltip": "You can choose a display currency for all products<ul><li>USD (Assets value equivalent to US Dollar)</li><li>Token (for example: aBNBc, aMATICb, etc.)</li><li>Coin (for example BNB, MATIC, etc.</li></ul>",
+      "token": "Token"
+    },
+    "vault-filters": {
+      "deposited": "Deposited",
+      "sort-by": "Sort by:",
+      "tvl": "TVL",
+      "apy": "APY"
+    },
+    "vault-table": {
+      "apy": "APY",
+      "tvl": "TVL",
+      "deposit": "Deposit"
+    },
+    "vault-item": {
+      "yield-converter-title": "aBNBc",
+      "yield-converter-description": "Yield Converter",
+      "yield-converter-description-tooltip": "Yield Converter Tooltip",
+      "stability-pool-title": "SIKKA",
+      "stability-pool-description": "Stability Pool",
+      "stability-pool-description-tooltip": "Stability Pool Tooltip",
+      "cross-chain-staking-title": "Vault Name",
+      "cross-chain-staking-description": "Cross-Chain Staking",
+      "cross-chain-staking-description-tooltip": "Cross-Chain Staking Tooltip"
+    },
+    "deposit": {
+      "title": "{unit} Deposit",
+      "approve": "Approve",
+      "amount": "{unit} Amount",
+      "vault-token": "{value} Vault Token",
+      "add-liquidity": "Add Liquidity",
+      "will-received": "{unit} will received",
+      "button": "Get {unit}",
+      "balance-additional-label": "Balance: <span>{value} {unit}</span>",
+      "reward-fee": "Reward Fee",
+      "reward-fee-tooltip": "Please note: this fee applies to staking rewards/earnings only, and is NOT taken from your staked amount. It is a fee on earnings only.",
+      "you-will-deposit": "You will deposit",
+      "apr": "APR",
+      "apr-tooltip": "The Stability Pool will liquidation fees from Helio. Ceros Protocol will keep the liquidation fees, buyback CEROS tokens and distribute the Stability Pool rewards in CEROS tokens. This will allow Stability Pool liquidity providers to benefit from a more stable yield."
+    },
+    "withdraw": {
+      "title": "Withdraw",
+      "redeem-unit": "Redeem {unit}",
+      "redeem-convert": "Redeem & Convert",
+      "redeem-to-single-token": "Redeem to single token",
+      "redeem-to-its-components": "Redeem to its components",
+      "button": "Get {unit}",
+      "redeem": "Redeem",
+      "vault": "Vault",
+      "balance-additional-label": "Your balance: <span>{value} {unit}</span>",
+      "reward-fee": "Reward Fee",
+      "reward-fee-tooltip": "Please note: this fee applies to staking rewards/earnings only, and is NOT taken from your staked amount. It is a fee on earnings only.",
+      "you-will-received": "Tokens to received",
+      "claim-yield": "Claim Yield ({unit})",
+      "claim-yield-tooltip": "By clicking on this switch button you will receive Yield and all Principal by one transaction.",
+      "you-will-receive": "You will receive",
+      "you-will-receive-tooltip": "The redemption price of caBNBc and aBNBc changes over time to the same pace as the aBNBc ratio from the liquid staking provider. As the Yield Converter allows you to claim the yield portion of reward bearing tokens, the amount of aBNBc that you can redeem with the yield converter vault token will decrease over time, but the remaining amount (yield portfolio) can be claimed anytime separately.",
+      "tokens-to-redeem": "Tokens to redeem",
+      "claim-reward": "Claim Reward (27 CEROS)",
+      "remove-liquidity": "Remove Liquidity",
+      "all-other-tokens": "All other tokens will be converted into USB upon withdrawal"
+    },
+    "claim": {
+      "title": "Claim",
+      "claim-convert": "Claim & Convert",
+      "button": "Claim {unit}",
+      "balance-additional-label": "Your balance: <span>{value} {unit}</span>",
+      "reward-fee": "Reward Fee",
+      "reward-fee-tooltip": "Please note: this fee applies to staking rewards/earnings only, and is NOT taken from your staked amount. It is a fee on earnings only.",
+      "you-will-received": "Tokens to received",
+      "send-external": "Send to external wallet",
+      "claim-yield-tooltip": "By clicking on this switch button you will receive Yield and all Principal by one transaction.",
+      "you-will-receive": "You will receive",
+      "you-will-receive-tooltip": "The minimum amont of deposit token you will receive upon withdrawal",
+      "send-to-external-wallet": "Send to external wallet",
+      "tokens-to-redeem": "Tokens to redeem"
+    }
+  },
+  "units": {
+    "aBNBc": "aBNBc",
+    "BNB": "BNB",
+    "USD": "USD",
+    "USDT": "USDT",
+    "USDC": "USDC",
+    "SIKKA": "SIKKA",
+    "MATIC": "MATIC",
+    "aMATICc": "aMATICc",
+    "coin": "coin",
+    "$-value": "${value}",
+    "aBNBc-value": "{value} aBNBc",
+    "maBNBc-value": "{value} maBNBc",
+    "BNB-value": "{value} BNB",
+    "percent": "{value}%"
+  },
+  "connect": {
+    "title": "Please connect your wallet to continue",
+    "subtitle": "Required network",
+    "submit": "Connect wallet"
+  },
+  "chain": {
+    "1": "Ethereum Mainnet",
+    "3": "Ropsten",
+    "4": "Rinkeby",
+    "5": "Ethereum Goerli",
+    "6": "Kotti",
+    "56": "Binance SmartChain",
+    "61": "Classic",
+    "63": "Mordor",
+    "97": "Binance SmartChain Testnet",
+    "137": "Polygon Mainnet",
+    "43113": "Avalanche C-Chain",
+    "43114": "Avalanche",
+    "2018": "Dev",
+    "250": "Fantom Opera",
+    "4002": "Fantom Testnet",
+    "80001": "Mumbai"
+  },
+  "routes": {
+    "page-not-found": "Page not found"
+  },
+  "utils": {
+    "loading-number": "{prefix} {number} {postfix}"
+  },
+  "master-vaults": {
+    "dashboard": {
+      "title": "Dashboard",
+      "tvl": "TVL",
+      "tvl-description": "The total value of deposits in US dollars",
+      "apr": "APR",
+      "apr-description": "mock description",
+      "user": "User",
+      "user-description": "mock description",
+      "create": "Create New Vault"
+    },
+    "table": {
+      "header": {
+        "name": "Name",
+        "deposit": "Deposit Fee",
+        "deposit-tooltip": "Deposit Fee tooltip",
+        "deposit-recipient": "Deposit Fee Recipient",
+        "withdraw": "Withdraw Fee",
+        "withdraw-tooltip": "Withdraw Fee tooltip",
+        "withdraw-recipient": "Withdraw Fee Recipient",
+        "strategy": "Strategy",
+        "strategy-tooltip": "Strategy tooltip",
+        "apr": "APR",
+        "apr-tooltip": "APR tooltip",
+        "apy": "APY",
+        "apy-percent-tooltip": "APY tooltip",
+        "allocation": "Allocation (%)",
+        "allocation-tooltip": "Allocation (%) tooltip",
+        "tvl": "TVL",
+        "tvl-tooltip": "TVL tooltip",
+        "current-allocation": "Current Allocation",
+        "current-allocation-tooltip": "Current Allocation tooltip",
+        "user": "User",
+        "user-tooltip": "User tooltip",
+        "contract-address": "Contract Address",
+        "whitelist": "Only whitelisted depositors",
+        "vault-title": "Vault Name"
+      }
+    },
+    "form": {
+      "create": "Create Vault",
+      "update": "Update Vault"
+    },
+    "perfomance-table": {
+      "deposit-title": "Deposit",
+      "deposit-tooltip": "The total value of deposits in US dollars",
+      "expect-annual-title": "Expect annual rewards",
+      "expect-annual-tooltip": "The expect annual yield is an weighted average return of all the pool you have participated",
+      "rewards-claimable-title": "Rewards claimable",
+      "rewards-claimable-tooltip": "Please note: this fee applies to staking rewards/earnings only, and is NOT taken from your staked amount. It is a fee on earnings only."
+    },
+    "stats": {
+      "title": "Strategies"
+    },
+    "create": {
+      "smart-contract-code": "Smart Contract code"
+    },
+    "common": {
+      "smart-contract-address": "Smart Contract address",
+      "smart-contract-code": "Smart Contract code"
+    },
+    "strategy": {
+      "add-new-strategy": "Add new Strategy",
+      "header": {
+        "strategy": "Strategy",
+        "strategy-tooltip": "Strategy tooltip",
+        "apy": "APY",
+        "apy-tooltip": "APY tooltip",
+        "allocation": "Allocation",
+        "allocation-tooltip": "Allocation tooltip"
+      },
+      "item": {
+        "deploy": "Deploy",
+        "title": "Strategy name"
+      }
+    }
+  }
+}

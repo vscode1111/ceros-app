@@ -1,0 +1,33 @@
+.web3modal-modal-lightbox {
+  display: none !important;
+}
+
+.web3modal-modal-card {
+  width: unset !important;
+  padding: 40px 80px !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+.web3modal-provider-wrapper {
+  border: none !important;
+  padding: 10px !important;
+}
+
+.web3modal-provider-container {
+  width: 160px !important;
+  height: 140px !important;
+  border: 1px solid #5E5E5E !important;
+  border-radius: 16px !important;
+}
+
+.web3modal-provider-container:hover {
+  background-color: #5E5E5E !important;
+}
+
+.web3modal-provider-name {
+  font-size: 14px !important;
+}
+
+.web3modal-provider-description {
+  display: none !important;
+}
